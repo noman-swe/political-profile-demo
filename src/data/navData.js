@@ -1,5 +1,4 @@
 export const navLinks = [
-  { label: "হোম", href: "#home" },
   { label: "আমার সম্পর্কে", href: "#about" },
   { label: "সমস্যা ও প্ল্যাটফর্ম", href: "#platform" },
   { label: "সংবাদ এবং ব্লগ", href: "#news" },
