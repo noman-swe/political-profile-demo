@@ -3,7 +3,7 @@ import { footerInfo } from "../data/footerData";
 
 const Contact = () => {
   return (
-    <section className="py-24 bg-white dark:bg-slate-900">
+    <section id="contact" className="py-24 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-12">
         <div className="bg-primary text-white p-10 rounded-3xl h-full">
           <div className="mb-12">

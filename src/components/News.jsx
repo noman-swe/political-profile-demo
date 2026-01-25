@@ -3,7 +3,7 @@ import { news } from "../data/newsData";
 
 const News = () => {
   return (
-    <section className="py-24 bg-slate-50 dark:bg-slate-900/50">
+    <section id="news" className="py-24 bg-slate-50 dark:bg-slate-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold mb-4 section-title">
           সংবাদ এবং <span className="text-primary">ব্লগ</span>

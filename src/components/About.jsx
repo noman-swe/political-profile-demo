@@ -3,7 +3,10 @@ import { aboutCards, aboutImage } from "../data/aboutData";
 
 const About = () => {
   return (
-    <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section
+      id="about"
+      className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+    >
       <div className="flex flex-col md:flex-row gap-16">
         <div className="md:w-2/3">
           <h2 className="text-3xl font-bold mb-12 section-title">

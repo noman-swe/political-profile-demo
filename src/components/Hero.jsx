@@ -3,7 +3,7 @@ import { heroData } from "../data/heroData";
 
 const Hero = () => {
   return (
-    <section className="bg-hero-gradient pt-16 pb-24 overflow-hidden">
+    <section id="home" className="bg-hero-gradient pt-16 pb-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0">

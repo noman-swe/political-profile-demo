@@ -3,7 +3,7 @@ import { platforms } from "../data/platformData";
 
 const Platform = () => {
   return (
-    <section className="py-24 bg-slate-50 dark:bg-slate-900/50">
+    <section id="platform" className="py-24 bg-slate-50 dark:bg-slate-900/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold mb-4">
           সমস্যা এবং <span className="text-primary">প্ল্যাটফর্ম</span>
