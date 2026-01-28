@@ -209,7 +209,7 @@ const Contact = () => {
               </p>
             )}
 
-            <button className="bg-secondary text-white px-12 py-4 rounded-md font-bold shadow-lg hover:bg-opacity-90 transition">
+            <button className="bg-secondary text-white w-full md:w-64 px-12 py-4 rounded-md font-bold shadow-lg hover:bg-opacity-90 transition">
               সাবমিট করুন
             </button>
           </form>

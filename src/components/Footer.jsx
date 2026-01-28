@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-slate-50 dark:bg-slate-950 pt-56 pb-10">
       {/* Floating Candidate Image */}
-      <div className="absolute -top-48 right-12 md:right-24 z-20">
+      <div className="absolute -top-24 md:-top-48 right-12 md:right-24 z-20 ">
         <img
           alt="Farhad Iqbal"
           className="w-64 h-80 md:w-96 md:h-[520px] lg:w-[420px] lg:h-[560px] object-cover"
@@ -66,7 +66,7 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a className="hover:text-primary" href="#press">
+                <a className="hover:text-primary" href="#news">
                   প্রেস
                 </a>
               </li>
