@@ -30,36 +30,44 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
-    union: unions[0].value,
+    union: "",
     message: "",
   });
+
+  const [error, setError] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+    setError(""); // clear error on change
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Required field validation
-    if (
-      !formData.name.trim() ||
-      !formData.phone.trim() ||
-      !formData.union ||
-      !formData.message.trim()
-    ) {
-      alert("দয়া করে সব *প্রয়োজনীয়* ফিল্ড পূরণ করুন!");
+    // Validation
+    if (!formData.name.trim()) {
+      setError("অনুগ্রহ করে আপনার নাম লিখুন।");
+      return;
+    }
+    if (!formData.phone.trim()) {
+      setError("অনুগ্রহ করে আপনার হোয়াটসঅ্যাপ নম্বর লিখুন।");
+      return;
+    }
+    if (!formData.union) {
+      setError("অনুগ্রহ করে আপনার ইউনিয়ন নির্বাচন করুন।");
+      return;
+    }
+    if (!formData.message.trim()) {
+      setError("অনুগ্রহ করে আপনার মতামত লিখুন।");
       return;
     }
 
-    // WhatsApp number (Bangladesh example: 8801XXXXXXXXX)
-    const whatsappNumber = "8801688126772"; // Replace with your number
+    // WhatsApp number (replace with yours)
+    const whatsappNumber = "8801688126772";
 
-    // Prepare message
     const message = `নাম: ${formData.name}%0AWhatsApp: ${formData.phone}%0Aইউনিয়ন: ${formData.union}%0Aমতামত: ${formData.message}`;
 
-    // Open WhatsApp chat
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
 
     // Reset form
@@ -67,7 +75,7 @@ const Contact = () => {
       name: "",
       email: "",
       phone: "",
-      union: unions[0].value,
+      union: "",
       message: "",
     });
   };
@@ -146,7 +154,6 @@ const Contact = () => {
               <input
                 className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-md px-4 py-4 focus:ring-2 focus:ring-primary outline-none"
                 placeholder="পুরো নাম *"
-                required
                 type="text"
                 name="name"
                 value={formData.name}
@@ -166,7 +173,6 @@ const Contact = () => {
               <input
                 className="w-full bg-slate-50 dark:bg-slate-800 border-none rounded-md px-4 py-4 focus:ring-2 focus:ring-primary outline-none"
                 placeholder="হোয়াটসঅ্যাপ নম্বর *"
-                required
                 type="tel"
                 name="phone"
                 value={formData.phone}
@@ -178,8 +184,8 @@ const Contact = () => {
                 name="union"
                 value={formData.union}
                 onChange={handleChange}
-                required
               >
+                <option value="">ইউনিয়ন নির্বাচন করুন</option>
                 {unions.map((union, idx) => (
                   <option key={idx} value={union.value}>
                     {union.name}
@@ -195,8 +201,13 @@ const Contact = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              required
             ></textarea>
+
+            {error && (
+              <p className="text-red-600 font-medium bg-red-50 dark:bg-red-900/20 px-4 py-2 rounded-md">
+                {error}
+              </p>
+            )}
 
             <button className="bg-secondary text-white px-12 py-4 rounded-md font-bold shadow-lg hover:bg-opacity-90 transition">
               সাবমিট করুন
