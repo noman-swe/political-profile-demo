@@ -1,32 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import { navLinks } from "../data/navData";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const toggleMobileMenu = () => setMobileOpen((prev) => !prev);
+
   return (
     <nav className="sticky top-0 z-50 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center gap-2">
-            <a href="#home" className="text-2xl font-bold text-primary">
+          {/* Brand */}
+          <a href="#home" className="text-2xl font-bold text-primary">
             ফরহাদ <span className="text-secondary text-[10px]"> ইকবাল </span>
-            </a>
-          </div>
+          </a>
+
+          {/* Desktop Links */}
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link, idx) => (
               <a
                 key={idx}
-                className="hover:text-primary transition"
+                className="hover:text-primary transition font-medium"
                 href={link.href}
               >
                 {link.label}
               </a>
             ))}
           </div>
-          <button className="bg-primary text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition">
-            যোগাযোগ ও মতামত
-          </button>
+
+          {/* Mobile Menu Button */}
+          <div className="md:hidden">
+            <button onClick={toggleMobileMenu} className="focus:outline-none">
+              {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {mobileOpen && (
+        <div className="md:hidden bg-white dark:bg-slate-900/95 border-t border-slate-200 dark:border-slate-800 backdrop-blur-md">
+          <div className="flex flex-col px-4 py-4 space-y-4">
+            {navLinks.map((link, idx) => (
+              <a
+                key={idx}
+                className="hover:text-primary transition font-medium"
+                href={link.href}
+                onClick={() => setMobileOpen(false)} // close menu on click
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

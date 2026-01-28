@@ -1,23 +1,86 @@
 export const events = [
   {
-    date: "২৫ মার্চ, ২০২৪",
-    time: "৬:০০ PM",
-    title: "সোনারগাঁ ধান কাটা উৎসবে অংশগ্রহণ",
+    date: "০৬ নভেম্বর, ২০২৫",
+    time: "১২:০০ PM",
+    title: "টাঙ্গাইল-৫ আসনে ফরহাদ ইকবালকে বিএনপির মনোনয়ন দেওয়ার দাবি",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuBsemaxC4u182GENsmqdxTAlS9erYYLRaRRcxo0D7wb7YU9vLq4cE0QDcD5g9H9vjDLWMSBU8Vnz3nlIkGkwncXF_fF25KR-R0d5QBBEP3YCOCbcMWiRhevLf8pU0ht0WrCuOg_tfp6MngjErMGQKoY7yw9_oLTL-zwsH269mEMMohkVNPRIDNSSXkcunf6z2YB0CKObfBSsI5kJquTgjz7HSGGpad0jxZLFb3mc5cLK1iC71hZKK9ZRIvF-pGa6phX-Ro7ZC5pGylr",
+    "/images/news/news-2.jpg",
   },
   {
-    date: "২৮ মার্চ, ২০২৪",
-    time: "৪:০০ PM",
-    title: "গণতান্ত্রিক অধিকার রক্ষায় কর্মী সমাবেশ",
+    date: "১৬ সেপ্টেম্বর, ২০২৫",
+    time: "১০:০০ AM",
+    title: "টাঙ্গাইল সদর আসনে এমপি প্রার্থী ফরহাদ ইকবালকে ঘিরে জনতার উচ্ছ্বাস",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuAoGsC22Bd5yqnIkd9p2I8E2LU7ke4YX-jYWcanYyTwX1yh4rk_REi8E572rmyQoqXWWC5dbsIQT7FHrmeRUszz4tFOrUWiLMbQHDbLCk3VNNHbJss6Gjh_hUJRYcSddxjVE65Sm9waXJsBeu-dtX4VFaih9l1J9mwOB_Gzr3T_MFRWXitXm2emRCX5cxT0bFcxhHjlSzQQF8AahZXdk-I6_nUTDqeAYjHbsTlGootUW_Kb8XNABT_Ur7ewlVbEOm4CGveu-Z3dZp5A",
+      "/images/news/news-1.jpg",
   },
   {
-    date: "১ এপ্রিল, ২০২৪",
-    time: "৩:০০ PM",
-    title: "ইফতার ও দোয়া মাহফিল",
+    date: "০৮ ফেব্রুয়ারি, ২০২৬",
+    time: "০৪:৩০ PM",
+    title: "স্থানীয় যুবকদের সাথে বৈঠক",
     image:
-      "https://lh3.googleusercontent.com/aida-public/AB6AXuD7BYddh6pHmmEAYaDMQsrj3PWwr_dXjTgnxePjiJooPolLV52WiLARop2PVBm6S7GRTpvy5w-ZCiqEUdhUl2H9qmqctcKA2Z7dA5RJ8FQzU3b-domzjr-57LMdUdiR1-YzqPVmR2nUd_4-sYoB6BazdFi6p_0ifcmZhFRwTF4laBpp2xoVluHE5buofo3ca9YxpQm0Re3Vwxc1rWrobK4c3UZmXgjGAhbQQbf-NG99x72a85QU9fp8NmI35tyzdxoUk_LvMxHYO1oh",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXV0ivRVbjVJveW29Fu9uRR4EzCOPT30TZhA&s",
+  },
+  {
+    date: "০৩ ডিসেম্বর, ২০২৫",
+    time: "০২:০০ PM",
+    title: "খালেদা জিয়ার সুস্থতা কামনায় টাঙ্গাইলে দোয়া মাহফিল",
+    image:
+      "https://asset.kalerkantho.com/news_images/2025/12/03/1764773888-e06d061a77a7bde916b8a91163029d41.jpg",
+  },
+  {
+    date: "১২ জানুয়ারি, ২০২৬",
+    time: "০৫:০০ PM",
+    title: "পরিবর্তন হবে অঙ্গিকার, সদর হবে জনতার — টাঙ্গাইল-৫",
+    image: "/images/news/news-2.jpg", // Facebook ভিডিও বা পোস্টের জন্য image optional
+  },
+  {
+    date: "২৪ জানুয়ারি, ২০২৬",
+    time: "০৯:০০ AM",
+    title: "আমার অঙ্গিকার সমূহ",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXV0ivRVbjVJveW29Fu9uRR4EzCOPT30TZhA&s",
+  },
+  {
+    date: "০১ ফেব্রুয়ারি, ২০২৬",
+    time: "১১:০০ AM",
+    title: "গণসংযোগ কার্যক্রম — টাঙ্গাইল সদর",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXV0ivRVbjVJveW29Fu9uRR4EzCOPT30TZhA&s",
+  },
+  {
+    date: "০৫ ফেব্রুয়ারি, ২০২৬",
+    time: "০৩:০০ PM",
+    title: "শিক্ষার্থীদের সাথে সংলাপ ও মতবিনিময়",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXV0ivRVbjVJveW29Fu9uRR4EzCOPT30TZhA&s",
+  },
+  {
+    date: "০৮ ফেব্রুয়ারি, ২০২৬",
+    time: "০৪:৩০ PM",
+    title: "স্থানীয় যুবকদের সাথে বৈঠক",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXV0ivRVbjVJveW29Fu9uRR4EzCOPT30TZhA&s",
+  },
+  
+  {
+    date: "১২ ফেব্রুয়ারি, ২০২৬",
+    time: "০৯:০০ AM",
+    title: "ত্রয়োদশ জাতীয় সংসদ নির্বাচনে অংশগ্রহণ",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXV0ivRVbjVJveW29Fu9uRR4EzCOPT30TZhA&s",
+  },
+  {
+    date: "১৫ ফেব্রুয়ারি, ২০২৬",
+    time: "০২:০০ PM",
+    title: "নির্বাচনী ফলাফল ঘোষণা পরবর্তী সংলাপ",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXV0ivRVbjVJveW29Fu9uRR4EzCOPT30TZhA&s",
+  },
+  {
+    date: "২০ ফেব্রুয়ারি, ২০২৬",
+    time: "০৫:০০ PM",
+    title: "ভোটারদের ধন্যবাদ জানানোর সভা",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXV0ivRVbjVJveW29Fu9uRR4EzCOPT30TZhA&s",
   },
 ];
