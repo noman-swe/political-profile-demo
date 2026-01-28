@@ -15,12 +15,12 @@ const Hero = () => {
               {heroData.description}
             </p>
             <div className="flex gap-4">
-              <button className="bg-primary text-white px-8 py-3 rounded-md hover:bg-opacity-90 shadow-lg">
+              <a href="#volunteer" className="bg-primary text-white px-8 py-3 rounded-md hover:bg-opacity-90 shadow-lg">
                 স্বেচ্ছাসেবক হন
-              </button>
-              <button className="bg-secondary text-white px-8 py-3 rounded-md hover:bg-opacity-90 shadow-lg">
+              </a>
+              <a href="#contact" className="bg-secondary text-white px-8 py-3 rounded-md hover:bg-opacity-90 shadow-lg">
                 যোগাযোগ করুন
-              </button>
+              </a>
             </div>
           </div>
           <div className="md:w-1/2 relative order-1 md:order-2">

@@ -1,8 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Volunteer = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    union: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!formData.name || !formData.phone || !formData.union) {
+      alert("অনুগ্রহ করে নাম, হোয়াটসঅ্যাপ নম্বর এবং ইউনিয়ন অবশ্যই দিন।");
+      return;
+    }
+    console.log("Volunteer Form Submitted:", formData);
+    alert("ফর্ম জমা হয়েছে! কনসোলে চেক করুন।");
+  };
+
+  // Tangail-5 ইউনিয়নসমূহ
+  const unions = [
+    { name: "বাঘিল ইউনিয়ন", value: "Baghil Union" },
+    { name: "দাইন্যা ইউনিয়ন", value: "Dyenna Union" },
+    { name: "গালা ইউনিয়ন", value: "Gala Union" },
+    { name: "ঘরিন্দা ইউনিয়ন", value: "Gharinda Union" },
+    { name: "হুগড়া ইউনিয়ন", value: "Hugra Union" },
+    { name: "কাকুয়া ইউনিয়ন", value: "Kakua Union" },
+    { name: "করাটিয়া ইউনিয়ন", value: "Karatia Union" },
+    { name: "কাতুলী ইউনিয়ন", value: "Katuli Union" },
+    { name: "মগড়া ইউনিয়ন", value: "Mogra Union" },
+    { name: "মাহমুদনগর ইউনিয়ন", value: "Mahmudnagar Union" },
+    { name: "পোড়াবাড়ী ইউনিয়ন", value: "Porabari Union" },
+    { name: "সিলিমপুর ইউনিয়ন", value: "Silimpur Union" },
+  ];
+
   return (
-    <section className="py-24 bg-slate-100 dark:bg-slate-900 overflow-hidden">
+    <section
+      id="volunteer"
+      className="py-24 bg-slate-100 dark:bg-slate-900 overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-16">
         <div className="md:w-1/2">
           <img
@@ -18,30 +59,50 @@ const Volunteer = () => {
           <p className="mb-8 opacity-70">
             আমাদের সাথে যুক্ত হয়ে সমাজ পরিবর্তনে অংশীদার হন।
           </p>
-          <form className="space-y-4 bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm">
+          <form
+            className="space-y-4 bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm"
+            onSubmit={handleSubmit}
+          >
             <input
               className="w-full bg-slate-50 dark:bg-slate-700 border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary outline-none"
-              placeholder="পুরো নাম"
+              placeholder="পুরো নাম *"
               type="text"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
             />
             <input
               className="w-full bg-slate-50 dark:bg-slate-700 border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary outline-none"
               placeholder="ইমেইল"
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
             />
             <input
               className="w-full bg-slate-50 dark:bg-slate-700 border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary outline-none"
-              placeholder="মোবাইল নম্বর"
+              placeholder="হোয়াটসঅ্যাপ নম্বর *"
               type="tel"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
             />
-            <div className="grid grid-cols-2 gap-4">
-              <select className="bg-slate-50 dark:bg-slate-700 border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary">
-                <option>থানা নির্বাচন করুন</option>
-              </select>
-              <select className="bg-slate-50 dark:bg-slate-700 border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary">
-                <option>ইউনিয়ন নির্বাচন করুন</option>
-              </select>
-            </div>
+            <select
+              className="w-full bg-slate-50 dark:bg-slate-700 border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary"
+              name="union"
+              value={formData.union}
+              onChange={handleChange}
+              required
+            >
+              <option value="">ইউনিয়ন নির্বাচন করুন *</option>
+              {unions.map((union, idx) => (
+                <option key={idx} value={union.value}>
+                  {union.name}
+                </option>
+              ))}
+            </select>
             <button className="w-full bg-secondary text-white py-3 rounded-md font-bold hover:bg-opacity-90 transition">
               সাবমিট করুন
             </button>
