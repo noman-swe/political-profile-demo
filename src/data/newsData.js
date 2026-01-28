@@ -1,14 +1,5 @@
 export const news = [
-  {
-    category: "রাজনৈতিক সংবাদ",
-    title: "খালেদা জিয়ার সুস্থতা কামনায় টাঙ্গাইলে দোয়া মাহফিল",
-    date: "০৩ ডিসেম্বর ২০২৫",
-    excerpt:
-      "বিএনপির চেয়ারপারসন সাবেক প্রধানমন্ত্রী খালেদা জিয়ার সুস্থতা কামনায় টাঙ্গাইলে বৈষম্যবিরোধী ছাত্র আন্দোলনের উদ্যোগে কোরআন খতম ও দোয়া মাহফিল অনুষ্ঠিত হয়। শহরের কেন্দ্রীয় শহীদ মিনার প্রাঙ্গণে আয়োজনটি হয়।",
-    image:
-      "/public/images/news/news-1.jpg",
-    link: "https://www.kalerkantho.com/online/country-news/2025/12/03/1614842",
-  },
+  
   
   {
     category: "রাজনৈতিক সংবাদ",
@@ -39,6 +30,16 @@ export const news = [
       "পরিবর্তন হবে অঙ্গিকার, সদর হবে জনতার। টাঙ্গাইল-৫ সদর আসনে এড. ফরহাদ ইকবাল।",
     image: "https://scontent.fdac24-5.fna.fbcdn.net/v/t39.30808-6/619601585_1405710701567668_2889936585932939142_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeElwFKE5FyHxTFocJmolUSSvB8oglnfRMa8HyiCWd9ExppgDXmFWX03ScadUySGtivOsSo-Pch7smMCEk7GiO9X&_nc_ohc=eR-O8kKXoAYQ7kNvwHDQYHW&_nc_oc=AdnOJpW8WqzNbHkIchnzq6AIJ-U_Ab8pL1uK9UIPqk_LRX9L5fkC0n8ObdJWHAa-qQo&_nc_zt=23&_nc_ht=scontent.fdac24-5.fna&_nc_gid=kxT7jN49-3mVNtoGmntByQ&oh=00_AfqaEBb_uHXrri9Tjli81Qou0139jmgOyD_OiiTNDhtrZg&oe=697F9C0E",
     link: "https://www.facebook.com/watch/?v=1811155462792734",
+  },
+  {
+    category: "রাজনৈতিক সংবাদ",
+    title: "খালেদা জিয়ার সুস্থতা কামনায় টাঙ্গাইলে দোয়া মাহফিল",
+    date: "০৩ ডিসেম্বর ২০২৫",
+    excerpt:
+      "বিএনপির চেয়ারপারসন সাবেক প্রধানমন্ত্রী খালেদা জিয়ার সুস্থতা কামনায় টাঙ্গাইলে বৈষম্যবিরোধী ছাত্র আন্দোলনের উদ্যোগে কোরআন খতম ও দোয়া মাহফিল অনুষ্ঠিত হয়। শহরের কেন্দ্রীয় শহীদ মিনার প্রাঙ্গণে আয়োজনটি হয়।",
+    image:
+      "/images/news/news-1.jpg",
+    link: "https://www.kalerkantho.com/online/country-news/2025/12/03/1614842",
   },
   {
     category: "রাজনৈতিক সংবাদ",
