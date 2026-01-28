@@ -1,5 +1,6 @@
 import React from "react";
 import { footerInfo } from "../data/footerData";
+import { Facebook, MailCheck, Mails, MapPinHouse, MonitorCheck, PhoneOutgoing } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -11,34 +12,54 @@ const Contact = () => {
           </div>
           <div className="space-y-8">
             <div className="flex gap-4">
-              <span className="material-icons">mail</span>
+            <MailCheck/>
               <div>
                 <p className="font-bold">ইমেইল করুন</p>
                 <p className="opacity-80">{footerInfo.email}</p>
               </div>
             </div>
             <div className="flex gap-4">
-              <span className="material-icons">phone</span>
+            <PhoneOutgoing />
               <div>
                 <p className="font-bold">ফোন করুন</p>
                 <p className="opacity-80">{footerInfo.phone}</p>
               </div>
             </div>
             <div className="flex gap-4">
-              <span className="material-icons">location_on</span>
+            <MapPinHouse />
               <div>
                 <p className="font-bold">অফিসের ঠিকানা</p>
                 <p className="opacity-80">{footerInfo.address}</p>
               </div>
             </div>
           </div>
-          <div className="mt-16 flex gap-4">
-            <span className="material-icons cursor-pointer">facebook</span>
-            <span className="material-icons cursor-pointer">
-              alternate_email
-            </span>
-            <span className="material-icons cursor-pointer">smart_display</span>
-          </div>
+          <div className="mt-16 flex gap-4 justify-end">
+  <a
+    href="https://www.facebook.com/adv.FarhadIqbal"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-secondary transition"
+  >
+    <Facebook />
+  </a>
+
+  <a
+    href="mailto:ad.farhadiqbal07@gmail.com"
+    className="hover:text-secondary transition"
+  >
+    <Mails />
+  </a>
+
+  <a
+    href="https://forhadikbal.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-secondary transition"
+  >
+    <MonitorCheck />
+  </a>
+</div>
+
         </div>
 
         <div className="md:col-span-2">

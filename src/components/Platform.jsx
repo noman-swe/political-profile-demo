@@ -13,13 +13,15 @@ const Platform = () => {
           অবস্থান:
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {platforms.map((item, idx) => (
+          {platforms.map((item, idx) => {
+            const Icon = item.icon;
+            return (
             <div
               key={idx}
               className="bg-primary text-white p-6 rounded-xl space-y-4"
             >
               <div className="flex items-center gap-3">
-                <span className="material-icons">{item.icon}</span>
+                <Icon className="text-white mb-4 w-8 h-8" />
                 <h3 className="font-bold">{item.title}</h3>
               </div>
               <ul className="text-sm space-y-2 opacity-90 list-disc pl-5">
@@ -28,7 +30,8 @@ const Platform = () => {
                 ))}
               </ul>
             </div>
-          ))}
+          );
+        })}
         </div>
       </div>
     </section>

@@ -1,25 +1,28 @@
+import { AlertTriangle, HandHelping,  Trophy, Users } from "lucide-react";
+
 export const aboutCards = [
   {
-    icon: "history_edu",
-    title: "দীর্ঘ রাজনৈতিক অভিজ্ঞতা",
-    text: "জনাব আজহারুল ইসলাম দীর্ঘ তিন দশকের অধিক রাজনৈতিক পথচলায় সাধারণ মানুষের অধিকার আদায়ে কাজ করে যাচ্ছেন।",
+    icon: Trophy,
+    title: "বিশিষ্ট আইনজীবী ও রাজনৈতিক ব্যক্তিত্ব",
+    text: "অ্যাডভোকেট ফরহাদ ইকবাল টাঙ্গাইলের একজন স্বনামধন্য আইনজীবী ও রাজনৈতিক ব্যক্তিত্ব হিসেবে পরিচিত।",
   },
   {
-    icon: "groups",
-    title: "সংসদীয় নির্বাচনে প্রতিদ্বন্দ্বিতা",
-    text: "নারায়ণগঞ্জ-৩ আসন থেকে একাধিকবার সংসদীয় নির্বাচনে প্রতিদ্বন্দ্বিতা করে বিপুল জনসমর্থন লাভ করেছেন।",
+    icon: Users,
+    title: "রাজনৈতিক নেতৃত্ব",
+    text: "তিনি টাঙ্গাইল জেলা বিএনপির সাবেক সাধারণ সম্পাদক হিসেবে দায়িত্ব পালন করেছেন এবং দলের সাংগঠনিক উন্নয়নে ভূমিকা রেখেছেন।",
   },
   {
-    icon: "volunteer_activism",
-    title: "জনহিতকর কাজ",
-    text: "এলাকার শিক্ষা, স্বাস্থ্য এবং অবকাঠামোগত উন্নয়নে তাঁর অবদান অনস্বীকার্য।",
+    icon: HandHelping,
+    title: "নির্বাচনী অংশগ্রহণ",
+    text: "তিনি টাঙ্গাইল-৫ (সদর) আসন থেকে স্বতন্ত্র প্রার্থী হিসেবে নির্বাচনে অংশগ্রহণ করেছেন।",
   },
   {
-    icon: "crisis_alert",
-    title: "দুর্যোগে পাশে থাকা",
-    text: "যেকোনো জাতীয় দুর্যোগ বা স্থানীয় সমস্যায় তিনি সবসময় সাধারণ মানুষের কাতারে থাকেন।",
+    icon: AlertTriangle,
+    title: "নীতিগত অবস্থান ও সংগ্রাম",
+    text: "দলীয় সিদ্ধান্ত অমান্য করলেও তিনি জনগণের অধিকার ও ন্যায়বিচারের পক্ষে দৃঢ় অবস্থান নিয়েছেন।",
   },
+  
 ];
 
 export const aboutImage =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuCJADSgy-JNv5OdnzEMJdwgZf6B3UjDxOgAViDDAzuAFlvV44sKzXfg4M2e_Mn7sfPVKlm138sV-A52oId6fioncc-lt3ni8Z8OMDElNRWfRnp_V6t9jgEAR4iQpFWZWvqv0qSN8RKUayW5zhvjl5OpLuCrGmaZ5BgGLLK77AB-ZffF03VMRbduF6Da6VQB5uiimSfD6p4Jec-woGnoxzlx0LZOEjov5LPEgkLvkIARhKx_EbtyFdaqOgaAg7TSBuuuoMp3BktEl_Ni";
+  "/images/banner/banner-2.png";

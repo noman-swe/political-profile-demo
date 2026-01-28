@@ -1,5 +1,6 @@
 import React from "react";
 import { roles } from "../data/rolesData";
+import { CircleCheckBig } from "lucide-react";
 
 
 const Roles = () => {
@@ -10,7 +11,8 @@ const Roles = () => {
         <div className="flex flex-wrap justify-center gap-4 md:gap-12">
           {roles.map((role, idx) => (
             <div key={idx} className="flex items-center gap-2">
-              <span className="material-icons">check_circle</span>
+              {/* <span className="material-icons">check_circle</span> */}
+              <CircleCheckBig />
               <span>{role}</span>
             </div>
           ))}

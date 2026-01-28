@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center gap-2">
             <a href="#home" className="text-2xl font-bold text-primary">
-              মান্নান
+            ফরহাদ <span className="text-secondary text-[10px]"> ইকবাল </span>
             </a>
           </div>
           <div className="hidden md:flex space-x-8">
