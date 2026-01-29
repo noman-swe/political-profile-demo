@@ -12,7 +12,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Brand */}
-          <a href="#home" className="text-2xl font-bold text-primary">
+          <a
+            href="#home"
+            onClick={() => setMobileOpen(false)}
+            className="text-2xl font-bold text-primary"
+          >
             ফরহাদ <span className="text-secondary text-[10px]"> ইকবাল </span>
           </a>
 

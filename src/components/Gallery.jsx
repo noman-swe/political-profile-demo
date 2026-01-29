@@ -10,16 +10,17 @@ const Gallery = () => {
       <p className="mb-12 opacity-70">আমাদের কার্যক্রমের কিছু স্থিরচিত্র</p>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {galleryImages.map((src, idx) => (
-          <img
-            key={idx}
-            alt={`Gallery ${idx + 1}`}
-            className="rounded-lg w-full h-48 object-cover hover:opacity-90 cursor-pointer"
-            src={src}
-          />
+          <div key={idx} className="overflow-hidden rounded-lg group">
+            <img
+              alt={`Gallery ${idx + 1}`}
+              className="w-full h-48 object-cover cursor-pointer transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:opacity-90"
+              src={src}
+            />
+          </div>
         ))}
       </div>
       <div className="text-center mt-12">
-        <button className="bg-secondary text-white px-8 py-2 rounded-md font-bold">
+        <button className="bg-secondary text-white px-8 py-2 rounded-md font-bold hover:bg-secondary/90 transition">
           আরো ছবি দেখুন
         </button>
       </div>

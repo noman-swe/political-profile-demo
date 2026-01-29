@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { unions } from "../data/unions";
 
 const Volunteer = () => {
   const [formData, setFormData] = useState({
@@ -22,22 +23,6 @@ const Volunteer = () => {
     console.log("Volunteer Form Submitted:", formData);
     alert("ফর্ম জমা হয়েছে! কনসোলে চেক করুন।");
   };
-
-  // Tangail-5 ইউনিয়নসমূহ
-  const unions = [
-    { name: "বাঘিল ইউনিয়ন", value: "Baghil Union" },
-    { name: "দাইন্যা ইউনিয়ন", value: "Dyenna Union" },
-    { name: "গালা ইউনিয়ন", value: "Gala Union" },
-    { name: "ঘরিন্দা ইউনিয়ন", value: "Gharinda Union" },
-    { name: "হুগড়া ইউনিয়ন", value: "Hugra Union" },
-    { name: "কাকুয়া ইউনিয়ন", value: "Kakua Union" },
-    { name: "করাটিয়া ইউনিয়ন", value: "Karatia Union" },
-    { name: "কাতুলী ইউনিয়ন", value: "Katuli Union" },
-    { name: "মগড়া ইউনিয়ন", value: "Mogra Union" },
-    { name: "মাহমুদনগর ইউনিয়ন", value: "Mahmudnagar Union" },
-    { name: "পোড়াবাড়ী ইউনিয়ন", value: "Porabari Union" },
-    { name: "সিলিমপুর ইউনিয়ন", value: "Silimpur Union" },
-  ];
 
   return (
     <section

@@ -11,6 +11,7 @@ import Volunteer from "./components/Volunteer";
 import SocialLinks from "./components/SocialLinks";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import VoterStats from "./components/VoterStats";
 
 const App = () => {
   return (
@@ -19,6 +20,8 @@ const App = () => {
       <Hero />
       <Roles />
       <About />
+      {/* <VoterData /> */}
+      <VoterStats />
       <Platform />
       <Gallery />
       <News />
