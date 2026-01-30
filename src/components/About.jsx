@@ -7,12 +7,13 @@ const About = () => {
       id="about"
       className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
     >
-      <div className="flex flex-col md:flex-row gap-16">
-        <div className="md:w-2/3">
+      <div className="flex flex-col md:flex-row gap-16 md:items-stretch">
+        {/* Cards Section */}
+        <div className="md:w-2/3 flex flex-col">
           <h2 className="text-3xl font-bold mb-12 section-title">
             আমার <span className="text-primary">সম্পর্কে</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 flex-1">
             {aboutCards.map((card, idx) => {
               const Icon = card.icon;
               return (
@@ -30,10 +31,13 @@ const About = () => {
             })}
           </div>
         </div>
-        <div className="md:w-1/3 h-full">
+
+        {/* Image Section */}
+        <div className="md:w-1/3 flex">
           <img
             alt="Full Body Portrait"
-            className="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition duration-500 shadow-xl"
+            className="w-full h-auto  rounded-2xl shadow-xl"
+            style={{ height: "100%" }}
             src={aboutImage}
           />
         </div>

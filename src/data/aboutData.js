@@ -1,4 +1,4 @@
-import { AlertTriangle, HandHelping,  Trophy, Users } from "lucide-react";
+import { AlertTriangle, HandHelping, Trophy, Users } from "lucide-react";
 
 export const aboutCards = [
   {
@@ -21,8 +21,6 @@ export const aboutCards = [
     title: "নীতিগত অবস্থান ও সংগ্রাম",
     text: "দলীয় সিদ্ধান্ত অমান্য করলেও তিনি জনগণের অধিকার ও ন্যায়বিচারের পক্ষে দৃঢ় অবস্থান নিয়েছেন।",
   },
-  
 ];
 
-export const aboutImage =
-  "/images/banner/banner-2.png";
+export const aboutImage = "/images/temp/ongikaar.jpeg";
