@@ -19,11 +19,11 @@ const Gallery = () => {
           </div>
         ))}
       </div>
-      <div className="text-center mt-12">
+      {/* <div className="text-center mt-12">
         <button className="bg-secondary text-white px-8 py-2 rounded-md font-bold hover:bg-secondary/90 transition">
           আরো ছবি দেখুন
         </button>
-      </div>
+      </div> */}
     </section>
   );
 };

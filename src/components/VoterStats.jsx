@@ -22,9 +22,9 @@ const VoterStats = () => {
     <div className="bg-gray-50 flex justify-center items-start font-sans">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Background Image Section - spans 2 columns */}
-        <div className="lg:col-span-2 relative overflow-hidden rounded-3xl bg-white shadow-sm border border-gray-100 flex flex-col justify-between min-h-112">
+        <div className="lg:col-span-2 relative overflow-hidden rounded-3xl bg-black shadow-sm border border-gray-100 flex flex-col justify-between min-h-112">
           <div
-            className="absolute inset-0 z-0 opacity-70"
+            className="absolute inset-0 z-0 opacity-50"
             style={{
               backgroundImage: 'url("/images/atiya-mosque.jpg")',
               backgroundRepeat: "no-repeat",
@@ -38,7 +38,7 @@ const VoterStats = () => {
               <MapPin className="text-white" size={24} />
             </div>
 
-            <h1 className="text-5xl font-bold text-[#333] mb-8">
+            <h1 className="text-5xl font-bold text-white mb-8">
               আমাদের টাঙ্গাইল - ৫
             </h1>
 

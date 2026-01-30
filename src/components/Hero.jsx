@@ -27,7 +27,7 @@ const Hero = () => {
             <div className="relative z-10 rounded-3xl overflow-hidden border-8 border-white dark:border-slate-800 shadow-2xl">
               <img
                 alt="Candidate Portrait"
-                className="w-full h-auto grayscale hover:grayscale-0 transition duration-500 shadow-xl aspect-square "
+                className="w-full h-auto md:grayscale md:hover:grayscale-0 transition duration-500 shadow-xl aspect-square "
                 src={heroData.image}
               />
             </div>
