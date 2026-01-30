@@ -8,17 +8,24 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 order-2 md:order-1">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 leading-tight">
-              জনাব <span className="text-primary"> এড. </span> <br /> <span className="text-secondary">ফরহাদ </span> ইকবাল
+              জনাব <span className="text-primary"> এড. </span> <br />{" "}
+              <span className="text-secondary">ফরহাদ </span> ইকবাল
             </h1>
             <p className="text-lg mb-6 opacity-90">"{heroData.slogan}"</p>
             <p className="mb-8 leading-relaxed max-w-lg">
               {heroData.description}
             </p>
             <div className="flex gap-4">
-              <a href="#volunteer" className="bg-primary text-white px-8 py-3 rounded-md hover:bg-opacity-90 shadow-lg">
+              <a
+                href="#volunteer"
+                className="bg-primary text-white px-8 py-3 rounded-md hover:bg-opacity-90 shadow-lg"
+              >
                 স্বেচ্ছাসেবক হন
               </a>
-              <a href="#contact" className="bg-secondary text-white px-8 py-3 rounded-md hover:bg-opacity-90 shadow-lg">
+              <a
+                href="#contact"
+                className="bg-secondary text-white px-8 py-3 rounded-md hover:bg-opacity-90 shadow-lg"
+              >
                 যোগাযোগ করুন
               </a>
             </div>
@@ -27,7 +34,8 @@ const Hero = () => {
             <div className="relative z-10 rounded-3xl overflow-hidden border-8 border-white dark:border-slate-800 shadow-2xl">
               <img
                 alt="Candidate Portrait"
-                className="w-full h-auto md:grayscale md:hover:grayscale-0 transition duration-500 shadow-xl aspect-square "
+                // className="w-full h-auto md:grayscale md:hover:grayscale-0 transition duration-500 shadow-xl aspect-square "
+                className="w-full h-auto transition duration-500 shadow-xl aspect-square "
                 src={heroData.image}
               />
             </div>
