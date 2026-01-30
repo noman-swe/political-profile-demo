@@ -83,12 +83,12 @@ const Footer = () => {
           <p className="text-center">
             Developed by{" "}
             <a
-              href="https://www.facebook.com/NomanAbdullahr"
+              href="https://dhakafort.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-secondary"
             >
-              Noman Shibly
+              DhakaFort
             </a>
           </p>
         </div>
