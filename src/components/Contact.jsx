@@ -37,7 +37,7 @@ const Contact = () => {
 
   // WhatsApp sending function (toggleable)
   const sendToWhatsApp = (data) => {
-    const whatsappNumber = "8801688126772";
+    const whatsappNumber = "8801923315623";
     const message = `নাম: ${data.name}%0AWhatsApp: ${data.phone}%0Aইউনিয়ন: ${data.union}%0Aবিষয়: ${data.subject}%0Aমতামত: ${data.message}`;
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
   };
