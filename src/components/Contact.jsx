@@ -52,7 +52,7 @@ const Contact = () => {
     }, 3000);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {  
     e.preventDefault();
 
     // Validation
